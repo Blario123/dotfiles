@@ -25,7 +25,7 @@ ZSH_THEME="agnoster"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -61,7 +61,6 @@ ZSH_THEME="agnoster"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
-
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -70,7 +69,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions dirhistory)
+plugins=(git zsh-autosuggestions dirhistory bgnotify command-not-found sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,7 +120,6 @@ sudo() {
 alias gs="git status"
 alias cls="clear"
 
-export PATH=$PATH:/home/blair/Qt/6.4.0/gcc_64
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 export CPLUS_INCLUDE_PATH=/usr/include/c++/
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
