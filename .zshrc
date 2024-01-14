@@ -123,3 +123,8 @@ alias cls="clear"
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 export CPLUS_INCLUDE_PATH=/usr/include/c++/
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+export PATH=$PATH:/home/blair/.spicetify
+export PATH=$PATH:/opt/wine-staging/bin
+export PATH=$PATH:/opt/llvm-project/build/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
