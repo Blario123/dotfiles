@@ -29,6 +29,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'preservim/nerdtree'
 Plug 'alvan/vim-closetag'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'benlubas/wrapping-paper.nvim'
 
 if has('nvim')
     function! UpdateRemotePlugins(...)
@@ -66,11 +68,15 @@ call wilder#set_option('renderer', wilder#popupmenu_renderer(wilder#popupmenu_bo
 
 syntax on
 colorscheme monokai
+set number relativenumber
 
 lua << END
 require('lualine').setup {
     options = { theme = 'onedark' }
 }
+
+vim.keymap.set("n", "gww", require("wrapping-paper").wrap_line, { desc = "fake wrap current line" } )
+
 END
 
 " Keybind section. Leader is set to 'v'
