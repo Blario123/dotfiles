@@ -6,8 +6,6 @@ ZSH_THEME="agnoster"
 zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
-ENABLE_CORRECTION="true"
-
 plugins=(git \
          zsh-autosuggestions \
          dirhistory \
